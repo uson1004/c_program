@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>상품 선택</legend>
+        <p><b>주문할 상품을 선택해 주세요.</b></p>
+
+        <li>
+          <label><input type="checkbox" value="s_3" />선물용 3kg</label>
+          <input type="number" min="0" max="3" />개 (최대 3개)
+        </li>
+        <li>
+          <label><input type="checkbox" value="s_5" />선물용 5kg</label>
+          <input type="number" min="0" max="5" />개 (최대 5개)
+        </li>
+        <li>
+          <label><input type="checkbox" value="f_3" />가정용 3kg</label>
+          <input type="range" min="0" max="3" />개 (최대 3개)
+        </li>
+        <li>
+          <label><input type="checkbox" value="f_5" />가정용 5kg</label>
+          <input type="range" min="0" max="5" />개 (최대 5개)
+        </li>
+
+        <p><b>포장 선택</b></p>
+        <label><input type="radio" name="gift" value="yes" />선물 포장</label>
+        <label
+          ><input type="radio" name="gift" value="no" />선물 포장 안 함</label
+        >
+      </fieldset>
+      <fieldset>
+        <legend>배송 정보</legend>
+        <li>
+          <label for="user-name">이름</label>
+          <input type="text" id="user-name" />
+        </li>
+        <li>
+          <label for="addr">배송 주소</label>
+          <input type="text" id="addr" />
+        </li>
+        <li>
+          <label for="mail">이메일 주소</label>
+          <input type="email" id="mail" />
+        </li>
+        <li>
+          <label for="phone">연락처</label>
+          <input type="tel" id="phone" />
+        </li>
+      </fieldset>
+
+      <label for="user-id">아이디(6자 이상)</label>
+      <input type="text" id="user-id" />
+
+      <fieldset>
+        <label>아이디: <input type="text" id="user-id" size="10" /> </label>
+        <label
+          >비밀번호: <input type="password" id="user-pw" size="10"
+        /></label>
+        <input type="image" src="/imgs/login.png" alt="로그인" />
+      </fieldset>
+      <div>
+        <input type="submit" value="주문하기" />
+        <input type="reset" value="취소하기" />
+      </div>
+    </form>
+
+    <h1>날짜 지정하기</h1>
+    <input type="date" />
+    <input type="month" />
+    <input type="week" />
+
+    <h1>시간 지정하기</h1>
+    <input type="time" /><input type="datetime-local" />
+
+    <h1>범위 제한하기</h1>
+    <input type="date" min="3000-02-01" max="3000-02-15" />
+
+    <form>
+      <input
+        type="button"
+        value="공지 창 열기"
+        onclick="window.open('tlftmq.html')"
+      />
+    </form>
+  </body>
+</html>
